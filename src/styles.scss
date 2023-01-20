@@ -1,3 +1,106 @@
-body {
-  background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #2D2D30;
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-size: 18px;
+  font-weight: 900;
+}
+h3{
+  font-size: 14px;
+  color: rgba(222, 221, 221, 0.566)
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.container{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards__title{
+  color: white;
+  font-size: 30px;
+}
+.cards__container{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 1px solid #57575da3;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  width: 23.5%;
+  margin-top: 20px;
+}
+.card__image{
+  width: 100%;
+}
+.card__text-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 8px;
+  gap: 10px;
+}
+.character--dead-or-alive{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.character--dead{
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.character--alive{
+  background-color: green;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.character--unknown{
+  background-color: yellow;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.button{
+  height: 50px;
+  background-color: #626269;
+  border: none;
+  width: 20%;
+  border-radius: 10px;
+  &:hover{
+    background-color: #a3a3ae;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
 }
